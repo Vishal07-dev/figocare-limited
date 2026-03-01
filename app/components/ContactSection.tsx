@@ -121,9 +121,9 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                   <p className="text-gray-600">
-                    123 Healthcare House<br />
-                    London, EC1A 1BB<br />
-                    United Kingdom
+                    128 City Road<br />
+                    London, United Kingdom<br />
+                    EC1V 2NX
                   </p>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+44 020 1234 5678</p>
+                  <p className="text-gray-600">+ 02081294836</p>
                 </div>
               </div>
             </div>
@@ -148,8 +148,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Business Queries</h4>
-                  <a href="mailto:info@figocare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
-                    info@figocare.co.uk
+                  <a href="mailto:darshit@yesdochealthcare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
+                    darshit@yesdochealthcare.co.uk
                   </a>
                 </div>
               </div>

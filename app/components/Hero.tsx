@@ -67,7 +67,7 @@ export default function Hero() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a
-                  href="mailto:info@figocare.co.uk"
+                  href="mailto:darshit@yesdochealthcare.co.uk"
                   className="group bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all hover:shadow-2xl hover:shadow-primary/30 inline-flex items-center justify-center gap-3"
                 >
                   Request Staff

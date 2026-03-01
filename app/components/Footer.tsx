@@ -27,9 +27,9 @@ export default function Footer() {
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               FIGO CARE LTD<br />
-              123 Healthcare House, London, EC1A 1BB<br />
-              Email: info@figocare.co.uk<br />
-              Phone: +44 020 1234 5678
+              128 City Road, London, United Kingdom, EC1V 2NX<br />
+              Email: darshit@yesdochealthcare.co.uk<br />
+              Phone: +02081294836
             </p>
             <div className="flex gap-4">
               {/* Social Icons */}
@@ -104,16 +104,16 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-gray-400">
-                  123 Healthcare House, London, EC1A 1BB
+                  128 City Road, London, United Kingdom, EC1V 2NX
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-gray-400">+44 020 1234 5678</span>
+                <span className="text-gray-400">+02081294836</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-gray-400">info@figocare.co.uk</span>
+                <span className="text-gray-400">darshit@yesdochealthcare.co.uk</span>
               </li>
             </ul>
           </div>

@@ -81,7 +81,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600">
-                    info@figocare.co.uk
+                    darshit@yesdochealthcare.co.uk
                     <br />
                     recruitment@figocare.co.uk
                   </p>
