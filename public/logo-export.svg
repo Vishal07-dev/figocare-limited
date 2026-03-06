@@ -1,0 +1,25 @@
+<svg width="480" height="160" viewBox="0 0 480 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: white -->
+  <rect width="480" height="160" fill="white"/>
+
+  <!-- Green circle icon -->
+  <circle cx="80" cy="80" r="66" fill="#6BBF4E"/>
+
+  <!-- White F letterform (same path as Logo.tsx scaled to 160px circle space) -->
+  <!-- Original viewBox 0 0 48 48, circle r=22 centered at 24,24 -->
+  <!-- Scale factor: 66/22 = 3x, translate to center 80,80 -->
+  <!-- Original path coords: x*3 + (80-24*3), y*3 + (80-24*3) = x*3-(-8+80-72)=x*3+8... -->
+  <!-- Simpler: transform="translate(80,80) scale(3) translate(-24,-24)" -->
+  <g transform="translate(80,80) scale(3) translate(-24,-24)">
+    <path
+      d="M16 14H32C33.1 14 34 14.9 34 16V18C34 19.1 33.1 20 32 20H20V22H28C29.1 22 30 22.9 30 24V26C30 27.1 29.1 28 28 28H20V32C20 33.1 19.1 34 18 34H16C14.9 34 14 33.1 14 32V16C14 14.9 14.9 14 16 14Z"
+      fill="white"
+    />
+    <!-- Accent dot -->
+    <circle cx="36" cy="36" r="4" fill="rgba(255,255,255,0.8)"/>
+  </g>
+
+  <!-- Wordmark: FIGO in green, CARE in dark -->
+  <text x="165" y="72" font-family="'Inter', 'Geist', 'Arial Black', sans-serif" font-weight="800" font-size="64" fill="#6BBF4E" letter-spacing="-1">FIGO</text>
+  <text x="165" y="140" font-family="'Inter', 'Geist', 'Arial Black', sans-serif" font-weight="800" font-size="64" fill="#1a1a2e" letter-spacing="-1">CARE</text>
+</svg>

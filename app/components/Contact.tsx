@@ -27,12 +27,12 @@ export default function Contact() {
             Get in Touch
           </span>
           <h2 id="contact-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">
-            Start Your Healthcare Staffing Journey
+            Begin Your Healthcare Staffing Partnership
           </h2>
           <p className="text-gray-600 text-lg">
-            Whether you need qualified nurses and care assistants or you are looking 
-            for your next healthcare role in the UK, our team is ready to help. Contact us 
-            today for a no-obligation consultation.
+            Looking for dependable nurses and carers, or searching for your next
+            opportunity in healthcare? Our team is standing by to guide you. 
+            Reach out for a free, no-obligation discussion.
           </p>
         </div>
 
@@ -45,11 +45,11 @@ export default function Contact() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Our Office</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">Our Location</h3>
                   <p className="text-gray-600">
-                    123 Healthcare House
+                    128 City Road
                     <br />
-                    London, EC1A 1BB
+                    London, EC1V 2NX
                     <br />
                     United Kingdom
                   </p>
@@ -63,11 +63,11 @@ export default function Contact() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">Telephone</h3>
                   <p className="text-gray-600">
-                    Main: 020 1234 5678
+                    Main: 020 8129 4836
                     <br />
-                    24/7 Line: 0800 123 4567
+                    24/7 Line: 020 8129 4836
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600">
-                    darshit@yesdochealthcare.co.uk
+                    info@figocare.co.uk
                     <br />
                     recruitment@figocare.co.uk
                   </p>
@@ -176,7 +176,7 @@ export default function Contact() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"
-                  placeholder="Tell us about your staffing requirements or how we can help with your healthcare career..."
+                  placeholder="Describe your staffing needs or tell us about your career goals in healthcare..."
                 />
               </div>
 
@@ -189,8 +189,8 @@ export default function Contact() {
               </button>
 
               <p className="mt-4 text-sm text-gray-500">
-                By submitting this form, you agree to our privacy policy. We will 
-                never share your information with third parties.
+                By submitting this form, you consent to our privacy policy. Your 
+                details will remain confidential and never be shared with outside parties.
               </p>
             </form>
           </div>

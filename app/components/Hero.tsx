@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Play, Shield, Clock, Award } from "lucide-react";
+import { ArrowRight, Briefcase, Shield, Clock, Award } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const stats = [
-  { icon: <Shield className="w-5 h-5" />, label: "CQC Compliant", value: "100%" },
-  { icon: <Clock className="w-5 h-5" />, label: "Response Time", value: "< 2hrs" },
-  { icon: <Award className="w-5 h-5" />, label: "Client Satisfaction", value: "98%" },
+  { icon: <Shield className="w-5 h-5" />, label: "Regulatory Standards", value: "100%" },
+  { icon: <Clock className="w-5 h-5" />, label: "Rapid Deployment", value: "< 2hrs" },
+  { icon: <Award className="w-5 h-5" />, label: "Partner Retention", value: "97%" },
 ];
 
 export default function Hero() {
@@ -46,28 +46,28 @@ export default function Hero() {
               <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 <span className="text-gray-700 text-sm font-medium">
-                  Trusted by 500+ UK Healthcare Providers
+                  Partnering with 500+ Healthcare Facilities Nationwide
                 </span>
               </div>
 
               {/* Main Headline - SEO Optimized H1 */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-[1.1]">
-                <span className="text-primary">Caring Hands,</span>
+                <span className="text-primary">FIGO CARE</span>
                 <br />
-                <span>Trusted Support</span>
+                <span className="text-xl sm:text-2xl lg:text-3xl text-gray-700 font-semibold block mt-2">Premier UK Healthcare Staffing Agency</span>
               </h1>
 
               {/* Subheadline - SEO Optimized */}
               <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl leading-relaxed">
-                Supplying Compassionate Healthcare Staff When You Need Them Most. 
-                FIGO CARE LTD connects qualified nurses and care assistants with 
-                hospitals, care homes, and NHS providers across the UK.
+                Connecting NHS trusts, private hospitals, and care homes with 
+                rigorously vetted nurses, carers, and healthcare professionals — 
+                available at short notice, 24 hours a day, 7 days a week.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a
-                  href="mailto:darshit@yesdochealthcare.co.uk"
+                  href="mailto:info@figocare.co.uk"
                   className="group bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all hover:shadow-2xl hover:shadow-primary/30 inline-flex items-center justify-center gap-3"
                 >
                   Request Staff
@@ -77,8 +77,8 @@ export default function Hero() {
                   href="/Roles"
                   className="group bg-white border-2 border-gray-200 hover:border-primary hover:bg-primary/5 text-gray-700 hover:text-primary px-8 py-4 rounded-xl text-lg font-semibold transition-all inline-flex items-center justify-center gap-3"
                 >
-                  <Play className="w-5 h-5" />
-                  Join Our Team
+                  <Briefcase className="w-5 h-5" />
+                  Explore Careers
                 </Link>
               </div>
 
@@ -128,8 +128,8 @@ export default function Hero() {
                           <Shield className="w-6 h-6 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-bold text-gray-900">Fully Vetted Staff</h3>
-                          <p className="text-gray-500 text-sm">DBS checked & NMC registered</p>
+                          <h3 className="font-bold text-gray-900">Rigorously Screened Talent</h3>
+                          <p className="text-gray-500 text-sm">Background verified & professionally accredited</p>
                         </div>
                       </div>
                     </div>
@@ -138,8 +138,8 @@ export default function Hero() {
 
                 {/* Floating Badge */}
                 <div className="absolute -top-4 -right-4 bg-primary text-white px-6 py-3 rounded-2xl shadow-xl">
-                  <div className="text-2xl font-bold">5,000+</div>
-                  <div className="text-sm text-white/80">Healthcare Pros</div>
+                  <div className="text-2xl font-bold">4,500+</div>
+                  <div className="text-sm text-white/80">Skilled Professionals</div>
                 </div>
 
                 {/* Floating Accent */}

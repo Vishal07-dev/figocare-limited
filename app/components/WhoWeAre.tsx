@@ -11,18 +11,18 @@ interface ValueProps {
 const values: ValueProps[] = [
   {
     icon: <Heart className="w-8 h-8" />,
-    title: "Compassionate Care",
-    description: "We prioritize empathy and kindness in every staffing decision we make.",
+    title: "People-First Approach",
+    description: "Every placement decision begins with genuine empathy and a deep respect for patient wellbeing.",
   },
   {
     icon: <ShieldCheck className="w-8 h-8" />,
-    title: "Trusted Professionals",
-    description: "Our rigorous vetting ensures only the most reliable staff join our team.",
+    title: "Verified Excellence",
+    description: "Thorough background screening and credential checks guarantee only top-tier professionals represent our agency.",
   },
   {
     icon: <Clock className="w-8 h-8" />,
-    title: "Responsive Service",
-    description: "Available 24/7 to meet your staffing needs, whenever they arise.",
+    title: "Round-the-Clock Availability",
+    description: "Our dedicated team operates day and night to address both emergency and scheduled workforce requirements.",
   },
 ];
 
@@ -33,15 +33,10 @@ export default function WhoWeAre() {
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 id="who-we-are-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Who We Are
+            About Us
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            At FIGO CARE LTD, we are committed to providing skilled, compassionate, 
-            and reliable healthcare professionals across the UK. Our mission is to 
-            enhance patient care, ensure service continuity, and exceed regulatory 
-            standards by connecting care homes, hospitals, and healthcare centres 
-            with trusted staff. We believe great care starts with great people—and 
-            we&apos;re here to deliver both.
+            At Figo Care, our driving force is transforming how healthcare organisations find and retain outstanding talent. Drawing on extensive industry knowledge, we recognise that placing the right professionals in the right roles is fundamental to delivering exceptional patient outcomes. We go beyond simple recruitment — we build lasting partnerships that empower both facilities and practitioners to thrive.
           </p>
         </div>
 
@@ -71,7 +66,7 @@ export default function WhoWeAre() {
           {/* Image */}
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2070&auto=format&fit=crop"
               alt="Healthcare professionals collaborating - FIGO CARE team"
               fill
               className="object-cover"

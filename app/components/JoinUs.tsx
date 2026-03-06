@@ -13,32 +13,32 @@ interface BenefitProps {
 const benefits: BenefitProps[] = [
   {
     icon: <DollarSign className="w-6 h-6" />,
-    title: "Competitive Pay",
-    description: "Well-deserved pay for well-delivered care",
+    title: "Attractive Remuneration",
+    description: "Earn what you deserve with rates that reflect your dedication and skill",
   },
   {
     icon: <Calendar className="w-6 h-6" />,
-    title: "Flexible Work Schedules",
-    description: "Choose shifts that work around your life",
+    title: "Work-Life Balance",
+    description: "Pick shifts that fit your schedule and personal commitments",
   },
   {
     icon: <BookOpen className="w-6 h-6" />,
-    title: "Continuous Training",
-    description: "Develop your skills and advance your career",
+    title: "Professional Development",
+    description: "Access regular training to sharpen your expertise and grow your career",
   },
   {
     icon: <Heart className="w-6 h-6" />,
-    title: "Supportive Environment",
-    description: "Join a team that values your wellbeing",
+    title: "Welcoming Team Culture",
+    description: "Be part of an organisation that genuinely invests in your happiness",
   },
 ];
 
 const hiringRoles = [
-  { title: "Registered Nurses", location: "Various locations across the UK" },
-  { title: "Mental Health Nurses", location: "Specialist roles in mental health facilities" },
-  { title: "Senior Carer & Healthcare Assistants", location: "For nursing homes and residential care" },
-  { title: "Support Workers", location: "Learning disability and mental health support" },
-  { title: "Kitchen & Catering Assistants", location: "For healthcare facilities nationwide" },
+  { title: "Registered Nurses", location: "Positions available across England and Wales" },
+  { title: "Mental Health Nurses", location: "Dedicated roles within specialist psychiatric units" },
+  { title: "Senior Carers & Healthcare Assistants", location: "Serving care homes and residential facilities" },
+  { title: "Support Workers", location: "Complex care, learning disability, and mental health settings" },
+  { title: "Kitchen & Catering Assistants", location: "Healthcare catering roles countrywide" },
 ];
 
 export default function JoinUs() {
@@ -48,11 +48,11 @@ export default function JoinUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="join-us-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Be Part of Something Meaningful
+            Build a Career That Matters
           </h2>
           <p className="text-gray-600 text-lg">
-            Are you a caring professional looking for flexibility, growth, and purpose?
-            Join FIGO CARE and make a difference where it matters most.
+            Are you a dedicated healthcare professional seeking rewarding opportunities with real flexibility?
+            Figo Care offers you the chance to shape your career while making a genuine impact.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function JoinUs() {
           {/* Benefits Section */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">
-              Benefits of Joining Us
+              Why Work With Figo Care
             </h3>
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
@@ -80,17 +80,17 @@ export default function JoinUs() {
               href="mailto:recruitment@figocare.co.uk"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg mt-8"
             >
-              Apply Now – Send Your CV
+              Apply Now – Submit Your CV
             </a>
           </div>
 
           {/* We're Hiring Section */}
           <div className="bg-gray-50 p-8 rounded-2xl">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              We&apos;re Hiring
+              Current Openings
             </h3>
             <p className="text-gray-600 mb-8">
-              We&apos;re currently looking for dedicated professionals to fill these roles:
+              We&apos;re actively recruiting talented individuals for the following positions:
             </p>
             <div className="space-y-4">
               {hiringRoles.map((role, index) => (
@@ -104,7 +104,7 @@ export default function JoinUs() {
               ))}
             </div>
             <div className="mt-8 p-4 bg-primary/10 rounded-xl">
-              <p className="text-gray-700 font-medium">Email to Apply:</p>
+              <p className="text-gray-700 font-medium">Send Your Application:</p>
               <a
                 href="mailto:recruitment@figocare.co.uk"
                 className="text-primary hover:text-primary-dark font-semibold transition-colors"

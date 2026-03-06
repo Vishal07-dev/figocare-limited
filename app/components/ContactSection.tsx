@@ -23,11 +23,11 @@ export default function ContactSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="contact-section-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Let&apos;s Talk
+            Get in Touch
           </h2>
           <p className="text-gray-600 text-lg">
-            We&apos;d love to hear from you. Whether you need staffing solutions or want to join
-            our team, get in touch with us.
+            Have a question or ready to partner with us? Whether you need workforce support or
+            want to explore career opportunities, our team is here to help.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function ContactSection() {
           {/* Contact Form */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Send Us a Message
+              Drop Us a Line
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none bg-white"
-                  placeholder="Tell us about your requirements..."
+                  placeholder="Describe your staffing requirements or enquiry..."
                 />
               </div>
               <button
@@ -110,7 +110,7 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Contact Information
+              Reach Us Directly
             </h3>
             
             <div className="bg-white p-6 rounded-2xl shadow-sm">
@@ -119,7 +119,7 @@ export default function ContactSection() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
+                  <h4 className="font-semibold text-gray-900 mb-1">Our Office</h4>
                   <p className="text-gray-600">
                     128 City Road<br />
                     London, United Kingdom<br />
@@ -135,8 +135,8 @@ export default function ContactSection() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">+ 02081294836</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
+                  <a href="tel:+442081294836" className="text-gray-600 hover:text-primary transition-colors">020 8129 4836</a>
                 </div>
               </div>
             </div>
@@ -147,9 +147,9 @@ export default function ContactSection() {
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Business Queries</h4>
-                  <a href="mailto:darshit@yesdochealthcare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
-                    darshit@yesdochealthcare.co.uk
+                  <h4 className="font-semibold text-gray-900 mb-1">Email Enquiries</h4>
+                  <a href="mailto:info@figocare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
+                    info@figocare.co.uk
                   </a>
                 </div>
               </div>
@@ -161,8 +161,8 @@ export default function ContactSection() {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Hours of Operation</h4>
-                  <p className="text-gray-600 font-semibold">Available 24/7</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Working Hours</h4>
+                  <p className="text-gray-600 font-semibold">Open 24 Hours, 7 Days a Week</p>
                 </div>
               </div>
             </div>

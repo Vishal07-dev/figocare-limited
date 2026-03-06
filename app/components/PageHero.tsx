@@ -10,8 +10,8 @@ interface PageHeroProps {
 }
 
 export default function PageHero({ 
-  title = "Caring Hands, Trusted Support",
-  subtitle = "Supplying Compassionate Healthcare Staff When You Need Them Most",
+  title = "FIGO CARE",
+  subtitle = "Delivering Trusted Healthcare Professionals Across the UK",
   image = "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
 }: PageHeroProps) {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +26,7 @@ export default function PageHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={image}
-          alt="FIGO CARE healthcare professionals"
+          alt={`${title} - ${subtitle}`}
           fill
           className="object-cover"
           priority

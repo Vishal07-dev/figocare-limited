@@ -141,6 +141,11 @@ body {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
+/* Scroll offset for sticky navbar */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 /* Selection styling */
 ::selection {
   background: var(--primary);

@@ -65,7 +65,7 @@ function RoleCard({ image, title, description, requirements }: RoleCardProps) {
           ))}
         </div>
         <a
-          href="#contact"
+          href="/Contact"
           className="inline-block mt-6 text-primary font-semibold hover:text-primary-dark transition-colors"
         >
           Learn More →
@@ -108,7 +108,7 @@ export default function Roles() {
             positions.
           </p>
           <a
-            href="#contact"
+            href="/Contact"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg"
           >
             Get in Touch

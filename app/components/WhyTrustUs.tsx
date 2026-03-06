@@ -10,28 +10,33 @@ interface TrustFeatureProps {
 const trustFeatures: TrustFeatureProps[] = [
   {
     icon: <ShieldCheck className="w-8 h-8" />,
-    title: "Fully Vetted Professionals",
-    description: "All staff are DBS-checked, referenced, and comprehensively trained.",
+    title: "Comprehensive Background Screening",
+    description: "Every team member undergoes enhanced DBS checks, reference verification, and skills assessments before placement.",
   },
   {
     icon: <Clock className="w-8 h-8" />,
-    title: "Available 24/7",
-    description: "We're always ready to meet urgent or planned staffing needs, day or night.",
+    title: "24/7 Operational Support",
+    description: "Our coordination desk never closes — reach us any time for last-minute cover or pre-planned workforce needs.",
   },
   {
     icon: <FileCheck className="w-8 h-8" />,
-    title: "Compliant Processes",
-    description: "Our staffing processes adhere to all Care Quality Commission standards.",
+    title: "Full Regulatory Compliance",
+    description: "All placements follow strict CQC guidelines and meet the latest industry governance frameworks.",
   },
   {
     icon: <Users className="w-8 h-8" />,
-    title: "Personalized Service",
-    description: "We understand your culture and care priorities to provide the perfect match.",
+    title: "Bespoke Matching",
+    description: "We take time to learn your facility culture and specific care priorities, ensuring each placement is the right fit.",
   },
   {
     icon: <BookOpen className="w-8 h-8" />,
-    title: "Ongoing Training",
-    description: "Continuous professional development ensures consistent quality of care.",
+    title: "Continuous Professional Growth",
+    description: "Our staff benefit from regular upskilling programmes that maintain high standards of clinical excellence.",
+  },
+  {
+    icon: <ShieldCheck className="w-8 h-8" />,
+    title: "Nationwide Coverage",
+    description: "From London to Edinburgh, our network spans the entire UK — ensuring rapid staff deployment to any region at any time.",
   },
 ];
 
@@ -42,7 +47,7 @@ export default function WhyTrustUs() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="why-trust-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Why Healthcare Providers Trust FIGO CARE
+            Why Healthcare Providers Choose Figo Care
           </h2>
         </div>
 
@@ -72,7 +77,7 @@ export default function WhyTrustUs() {
             href="/Contact"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg"
           >
-            Discuss Your Needs
+            Explore Our Solutions
           </a>
         </div>
       </div>

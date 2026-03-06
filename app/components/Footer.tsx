@@ -28,7 +28,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               FIGO CARE LTD<br />
               128 City Road, London, United Kingdom, EC1V 2NX<br />
-              Email: darshit@yesdochealthcare.co.uk<br />
+              Email: info@figocare.co.uk<br />
               Phone: +02081294836
             </p>
             <div className="flex gap-4">
@@ -109,11 +109,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-gray-400">+02081294836</span>
+                <a href="tel:+442081294836" className="text-gray-400 hover:text-primary transition-colors">020 8129 4836</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-gray-400">darshit@yesdochealthcare.co.uk</span>
+                <a href="mailto:info@figocare.co.uk" className="text-gray-400 hover:text-primary transition-colors">info@figocare.co.uk</a>
               </li>
             </ul>
           </div>
@@ -127,7 +127,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm text-center md:text-left">
               © {currentYear} FIGO CARE LTD. All rights reserved.
             </p>
-            <p className="text-gray-500 text-sm">Designed with care</p>
+            <p className="text-gray-500 text-sm">Crafted with purpose</p>
           </div>
         </div>
       </div>

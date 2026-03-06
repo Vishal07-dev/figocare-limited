@@ -12,32 +12,32 @@ const roles: RoleItemProps[] = [
   {
     icon: <Stethoscope className="w-10 h-10" />,
     title: "Registered Nurses",
-    description: "RGNs, RMNs with verified qualifications and experience",
+    description: "RGNs and RMNs holding validated qualifications and hands-on clinical expertise",
   },
   {
     icon: <HeartPulse className="w-10 h-10" />,
-    title: "Senior Carer & Healthcare Assistants",
-    description: "Trained HCAs for direct patient and resident care",
+    title: "Senior Carers & Healthcare Assistants",
+    description: "Skilled HCAs delivering frontline patient and resident support",
   },
   {
     icon: <Users className="w-10 h-10" />,
     title: "Support Workers",
-    description: "Dedicated professionals for complex care needs",
+    description: "Committed professionals managing complex and specialist care requirements",
   },
   {
     icon: <Activity className="w-10 h-10" />,
     title: "Allied Health Professionals",
-    description: "Specialists across multiple healthcare disciplines",
+    description: "Qualified practitioners spanning diverse therapeutic and clinical disciplines",
   },
   {
     icon: <UtensilsCrossed className="w-10 h-10" />,
     title: "Catering Assistants",
-    description: "Food service specialists for healthcare environments",
+    description: "Nutrition and food service experts for clinical and care environments",
   },
   {
     icon: <Sparkles className="w-10 h-10" />,
     title: "Cleaners",
-    description: "Maintaining hygiene standards in healthcare settings",
+    description: "Infection control and hygiene specialists upholding healthcare standards",
   },
 ];
 
@@ -48,10 +48,10 @@ export default function WhoWeProvide() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="who-we-provide-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Who We Provide
+            Our Divisions
           </h2>
           <p className="text-gray-600 text-lg">
-            We match you with reliable professionals for roles including:
+            We pair your organisation with dependable healthcare talent across these key positions:
           </p>
         </div>
 

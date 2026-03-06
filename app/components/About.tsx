@@ -65,7 +65,7 @@ export default function About() {
             </div>
 
             <a
-              href="#contact"
+              href="/Contact"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg mt-10"
             >
               Partner With Us

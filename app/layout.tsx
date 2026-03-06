@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ScrollProgress, ScrollToTop } from "./components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FIGO CARE LTD | UK Healthcare Staffing & Recruitment Agency",
+  title: "FIGO CARE LTD | Premier Healthcare Staffing Agency in the UK",
   description:
-    "FIGO CARE LTD is a trusted UK healthcare recruitment agency providing qualified nurses, care assistants and healthcare professionals to hospitals, care homes and private healthcare providers across the United Kingdom.",
+    "Figo Care is a specialist UK healthcare recruitment agency that places qualified nurses, carers, and allied health professionals into hospitals, care homes, and NHS trusts nationwide.",
   keywords: [
     "UK healthcare staffing",
     "healthcare recruitment agency UK",
@@ -47,9 +48,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://figocare.co.uk",
     siteName: "FIGO CARE LTD",
-    title: "FIGO CARE LTD | UK Healthcare Staffing & Recruitment Agency",
+    title: "FIGO CARE LTD | Premier Healthcare Staffing Agency in the UK",
     description:
-      "Trusted UK healthcare recruitment agency connecting qualified nurses and care assistants with hospitals and care homes across the United Kingdom.",
+      "Specialist UK healthcare recruitment agency placing qualified nurses and carers into hospitals and care homes nationwide.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop",
@@ -61,18 +62,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FIGO CARE LTD | UK Healthcare Staffing & Recruitment Agency",
+    title: "FIGO CARE LTD | Premier Healthcare Staffing Agency in the UK",
     description:
-      "Trusted UK healthcare recruitment agency. Nurses, care assistants & healthcare professionals for NHS and private providers.",
+      "Specialist UK healthcare recruitment agency. Nurses, carers & allied health professionals for NHS trusts and private providers.",
     images: [
       "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop",
     ],
   },
   alternates: {
     canonical: "https://figocare.co.uk",
-  },
-  verification: {
-    google: "your-google-verification-code",
   },
 };
 
@@ -83,10 +81,58 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "FIGO CARE LTD",
+              url: "https://figocare.co.uk",
+              logo: "https://figocare.co.uk/logo.png",
+              description:
+                "Specialist UK healthcare recruitment agency placing qualified nurses, carers, and allied health professionals into hospitals, care homes, and NHS trusts nationwide.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "128 City Road",
+                addressLocality: "London",
+                postalCode: "EC1V 2NX",
+                addressCountry: "GB",
+              },
+              telephone: "+442081294836",
+              email: "info@figocare.co.uk",
+              sameAs: [],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+442081294836",
+                contactType: "customer service",
+                availableLanguage: "English",
+                hoursAvailable: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
+                  opens: "00:00",
+                  closes: "23:59",
+                },
+              },
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ScrollProgress />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

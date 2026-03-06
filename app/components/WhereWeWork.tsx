@@ -11,32 +11,32 @@ const serviceAreas: ServiceItemProps[] = [
   {
     icon: <Building2 className="w-10 h-10" />,
     title: "Private Hospitals",
-    description: "Specialized staff for various departments and roles.",
+    description: "Qualified practitioners for surgical, medical, and outpatient departments.",
   },
   {
     icon: <Home className="w-10 h-10" />,
     title: "Nursing Homes",
-    description: "Care professionals dedicated to elderly and long-term care.",
+    description: "Experienced carers focused on elderly residents and long-term recovery.",
   },
   {
     icon: <Users className="w-10 h-10" />,
     title: "Residential Care",
-    description: "Staff for residential facilities and supported living.",
+    description: "Professionals for supported living environments and residential settings.",
   },
   {
     icon: <MapPin className="w-10 h-10" />,
     title: "Health Centres",
-    description: "Support for community-based healthcare facilities.",
+    description: "Reliable workforce solutions for community-based clinics and practices.",
   },
   {
     icon: <Brain className="w-10 h-10" />,
     title: "Learning Disability Services",
-    description: "Specialized support for clients with learning disabilities.",
+    description: "Trained specialists offering tailored assistance for individuals with learning needs.",
   },
   {
     icon: <Heart className="w-10 h-10" />,
     title: "Mental Health Facilities",
-    description: "Compassionate staff for mental health support and care.",
+    description: "Empathetic professionals delivering holistic mental health and wellbeing support.",
   },
 ];
 
@@ -47,10 +47,10 @@ export default function WhereWeWork() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 id="where-we-work-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Where We Work
+            Our Services
           </h2>
           <p className="text-gray-600 text-lg">
-            We provide staffing solutions for a variety of healthcare settings, including:
+            We deliver tailored workforce solutions across a broad spectrum of healthcare environments:
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function WhereWeWork() {
         {/* Bottom Text */}
         <div className="text-center mt-12">
           <p className="text-gray-600 text-lg">
-            Our staff are trained, vetted, and ready to step in—short notice or long term.
+            Every professional we place is thoroughly prepared, fully compliant, and available at short notice or for extended assignments.
           </p>
         </div>
       </div>

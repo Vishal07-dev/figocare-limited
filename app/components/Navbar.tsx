@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 
 const navLinks = [
@@ -10,12 +11,16 @@ const navLinks = [
   { href: "/About", label: "ABOUT US" },
   { href: "/Services", label: "SERVICES" },
   { href: "/Roles", label: "ROLES" },
-  { href: "/Contact", label: "Connect" },
+  { href: "/Contact", label: "CONTACT" },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +38,10 @@ export default function Navbar() {
           : "bg-white/80 backdrop-blur-sm py-6"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+      <nav
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        aria-label="Main navigation"
+      >
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" aria-label="FIGO CARE LTD - Home">
@@ -46,7 +54,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 rounded-lg text-sm font-medium transition-all hover:bg-primary/10 hover:text-primary text-gray-700"
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all hover:bg-primary/10 hover:text-primary ${
+                  isActive(link.href)
+                    ? "text-primary bg-primary/10 font-semibold"
+                    : "text-gray-700"
+                }`}
               >
                 {link.label}
               </Link>
@@ -85,18 +97,22 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-gray-700 hover:text-primary hover:bg-primary/5 py-3 px-4 rounded-xl transition-all font-medium"
+                className={`py-3 px-4 rounded-xl transition-all font-medium hover:text-primary hover:bg-primary/5 ${
+                  isActive(link.href)
+                    ? "text-primary bg-primary/10 font-semibold border-l-4 border-primary"
+                    : "text-gray-700"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <div className="border-t border-gray-100 mt-2 pt-4">
               <a
-                href="tel:02012345678"
+                href="tel:+442081294836"
                 className="flex items-center gap-2 text-gray-600 py-3 px-4"
               >
                 <Phone className="w-4 h-4" />
-                <span>020 1234 5678</span>
+                <span>020 8129 4836</span>
               </a>
               <Link
                 href="/Contact"
@@ -112,4 +128,3 @@ export default function Navbar() {
     </header>
   );
 }
-
