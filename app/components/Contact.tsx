@@ -83,7 +83,7 @@ export default function Contact() {
                   <p className="text-gray-600">
                     info@figocare.co.uk
                     <br />
-                    recruitment@figocare.co.uk
+                    info@figocare.co.uk
                   </p>
                 </div>
               </div>

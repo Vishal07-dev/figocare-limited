@@ -21,7 +21,7 @@ export default function PageHero({
   }, []);
 
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[30vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

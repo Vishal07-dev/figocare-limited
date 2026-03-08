@@ -29,7 +29,7 @@ export default function Footer() {
               FIGO CARE LTD<br />
               128 City Road, London, United Kingdom, EC1V 2NX<br />
               Email: info@figocare.co.uk<br />
-              Phone: +02081294836
+              Phone: 02081294836
             </p>
             <div className="flex gap-4">
               {/* Social Icons */}

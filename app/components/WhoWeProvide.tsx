@@ -8,6 +8,10 @@ interface RoleItemProps {
   description: string;
 }
 
+interface WhoWeProvideProps {
+  variant?: "white" | "primary";
+}
+
 const roles: RoleItemProps[] = [
   {
     icon: <Stethoscope className="w-10 h-10" />,
@@ -41,16 +45,18 @@ const roles: RoleItemProps[] = [
   },
 ];
 
-export default function WhoWeProvide() {
+export default function WhoWeProvide({ variant = "white" }: WhoWeProvideProps) {
+  const isPrimary = variant === "primary";
+  
   return (
-    <section className="py-24 bg-gray-50" aria-labelledby="who-we-provide-heading">
+    <section className={`py-13 ${isPrimary ? "bg-primary" : "bg-white"}`} aria-labelledby="who-we-provide-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 id="who-we-provide-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 id="who-we-provide-heading" className={`text-3xl sm:text-4xl font-bold mb-6 ${isPrimary ? "text-white" : "text-gray-900"}`}>
             Our Divisions
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className={`text-lg ${isPrimary ? "text-white/90" : "text-gray-600"}`}>
             We pair your organisation with dependable healthcare talent across these key positions:
           </p>
         </div>
@@ -60,7 +66,7 @@ export default function WhoWeProvide() {
           {roles.map((role, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 group border border-gray-100 hover:border-primary/20 text-center"
+              className={`rounded-2xl p-8 hover:shadow-xl transition-all duration-300 group border border-gray-100 text-center ${isPrimary ? "bg-white" : "bg-gray-50"}`}
             >
               <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 mx-auto group-hover:bg-primary group-hover:text-white transition-all duration-300">
                 {role.icon}

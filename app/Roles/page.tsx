@@ -1,4 +1,4 @@
-import { Navbar, PageHero, WhoWeProvide, JoinUs, ContactSection, Footer } from "../components";
+import { Navbar, PageHero, WhoWeProvide, JoinUs, Footer } from "../components";
 
 export const metadata = {
   title: "Healthcare Careers | FIGO CARE LTD - Explore Opportunities",
@@ -15,9 +15,8 @@ export default function RolesPage() {
           subtitle="Your Next Healthcare Career Starts Here"
           image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
         />
-        <WhoWeProvide />
-        <JoinUs />
-        <ContactSection />
+        <WhoWeProvide variant="white" />
+        <JoinUs variant="primary" />
       </main>
       <Footer />
     </>

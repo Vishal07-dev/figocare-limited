@@ -1,4 +1,4 @@
-import { Navbar, PageHero, WhoWeAre, WhyTrustUs, ContactSection, Footer } from "../components";
+import { Navbar, PageHero, WhoWeAre, WhyTrustUs, Footer } from "../components";
 
 export const metadata = {
   title: "About Us | FIGO CARE LTD - Healthcare Recruitment Specialists UK",
@@ -15,9 +15,8 @@ export default function AboutPage() {
           subtitle="Delivering Trusted Healthcare Professionals Across the UK"
           image="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2070&auto=format&fit=crop"
         />
-        <WhoWeAre />
-        <WhyTrustUs />
-        <ContactSection />
+        <WhoWeAre variant="white" />
+        <WhyTrustUs variant="primary" />
       </main>
       <Footer />
     </>

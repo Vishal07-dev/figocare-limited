@@ -7,6 +7,10 @@ interface TrustFeatureProps {
   description: string;
 }
 
+interface WhyTrustUsProps {
+  variant?: "white" | "primary";
+}
+
 const trustFeatures: TrustFeatureProps[] = [
   {
     icon: <ShieldCheck className="w-8 h-8" />,
@@ -40,13 +44,15 @@ const trustFeatures: TrustFeatureProps[] = [
   },
 ];
 
-export default function WhyTrustUs() {
+export default function WhyTrustUs({ variant = "white" }: WhyTrustUsProps) {
+  const isPrimary = variant === "primary";
+  
   return (
-    <section className="py-24 bg-gray-50" aria-labelledby="why-trust-heading">
+    <section className={`py-24 ${isPrimary ? "bg-primary" : "bg-white"}`} aria-labelledby="why-trust-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 id="why-trust-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 id="why-trust-heading" className={`text-3xl sm:text-4xl font-bold mb-6 ${isPrimary ? "text-white" : "text-gray-900"}`}>
             Why Healthcare Providers Choose Figo Care
           </h2>
         </div>
@@ -56,7 +62,7 @@ export default function WhyTrustUs() {
           {trustFeatures.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
+              className={`p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 text-center ${isPrimary ? "bg-white" : "bg-gray-50"}`}
             >
               <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-6">
                 {feature.icon}
@@ -75,7 +81,7 @@ export default function WhyTrustUs() {
         <div className="text-center mt-12">
           <a
             href="/Contact"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg"
+            className={`inline-flex items-center gap-2 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg ${isPrimary ? "bg-white hover:bg-gray-100 text-primary" : "bg-primary hover:bg-primary-dark text-white"}`}
           >
             Explore Our Solutions
           </a>

@@ -17,3 +17,4 @@ export { default as WhoWeProvide } from "./WhoWeProvide";
 export { default as WhyTrustUs } from "./WhyTrustUs";
 export { default as JoinUs } from "./JoinUs";
 export { default as ContactSection } from "./ContactSection";
+export { ToastProvider, useToast } from "./Toast";

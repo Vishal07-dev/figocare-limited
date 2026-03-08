@@ -8,6 +8,10 @@ interface ValueProps {
   description: string;
 }
 
+interface WhoWeAreProps {
+  variant?: "white" | "primary";
+}
+
 const values: ValueProps[] = [
   {
     icon: <Heart className="w-8 h-8" />,
@@ -26,16 +30,18 @@ const values: ValueProps[] = [
   },
 ];
 
-export default function WhoWeAre() {
+export default function WhoWeAre({ variant = "white" }: WhoWeAreProps) {
+  const isPrimary = variant === "primary";
+  
   return (
-    <section className="py-24 bg-white" aria-labelledby="who-we-are-heading">
+    <section className={`py-13 ${isPrimary ? "bg-primary" : "bg-white"}`} aria-labelledby="who-we-are-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 id="who-we-are-heading" className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 id="who-we-are-heading" className={`text-3xl sm:text-4xl font-bold mb-6 ${isPrimary ? "text-white" : "text-gray-900"}`}>
             About Us
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className={`text-lg leading-relaxed ${isPrimary ? "text-white/90" : "text-gray-600"}`}>
             At Figo Care, our driving force is transforming how healthcare organisations find and retain outstanding talent. Drawing on extensive industry knowledge, we recognise that placing the right professionals in the right roles is fundamental to delivering exceptional patient outcomes. We go beyond simple recruitment — we build lasting partnerships that empower both facilities and practitioners to thrive.
           </p>
         </div>
@@ -46,7 +52,7 @@ export default function WhoWeAre() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="flex gap-6 bg-gray-50 p-6 rounded-2xl hover:shadow-lg transition-all duration-300"
+                className={`flex gap-6 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 ${isPrimary ? "bg-white" : "bg-gray-50"}`}
               >
                 <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
                   {value.icon}

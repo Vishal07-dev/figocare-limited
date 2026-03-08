@@ -1,4 +1,4 @@
-import { Navbar, PageHero, WhereWeWork, ContactSection, Footer } from "../components";
+import { Navbar, PageHero, WhereWeWork, Footer } from "../components";
 
 export const metadata = {
   title: "Our Services | FIGO CARE LTD - Specialist Healthcare Staffing UK",
@@ -15,8 +15,7 @@ export default function ServicesPage() {
           subtitle="Tailored Workforce Solutions for Every Healthcare Setting"
           image="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2070&auto=format&fit=crop"
         />
-        <WhereWeWork />
-        <ContactSection />
+        <WhereWeWork variant="primary" />
       </main>
       <Footer />
     </>

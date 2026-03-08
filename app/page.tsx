@@ -6,7 +6,6 @@ import {
   WhoWeProvide,
   WhyTrustUs,
   JoinUs,
-  ContactSection,
   Footer,
 } from "./components";
 
@@ -16,12 +15,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <WhoWeAre />
-        <WhereWeWork />
-        <WhoWeProvide />
-        <WhyTrustUs />
-        <JoinUs />
-        <ContactSection />
+        <WhoWeAre variant="white" />
+        <WhereWeWork variant="primary" />
+        <WhoWeProvide variant="white" />
+        <WhyTrustUs variant="primary" />
+        <JoinUs variant="white" />
       </main>
       <Footer />
     </>
