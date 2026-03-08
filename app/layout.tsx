@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.figocare.co.uk"),
   title: "FIGO CARE LTD | Premier Healthcare Staffing Agency in the UK",
   description:
     "Figo Care is a specialist UK healthcare recruitment agency that places qualified nurses, carers, and allied health professionals into hospitals, care homes, and NHS trusts nationwide.",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://figocare.co.uk",
+    url: "https://www.figocare.co.uk",
     siteName: "FIGO CARE LTD",
     title: "FIGO CARE LTD | Premier Healthcare Staffing Agency in the UK",
     description:
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://figocare.co.uk",
+    canonical: "https://www.figocare.co.uk",
   },
 };
 
@@ -89,8 +90,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "FIGO CARE LTD",
-              url: "https://figocare.co.uk",
-              logo: "https://figocare.co.uk/logo.png",
+              url: "https://www.figocare.co.uk",
+              logo: "https://www.figocare.co.uk/logo.png",
               description:
                 "Specialist UK healthcare recruitment agency placing qualified nurses, carers, and allied health professionals into hospitals, care homes, and NHS trusts nationwide.",
               address: {

@@ -39,6 +39,8 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       {toast && (
         <div
           key={toast.id}
+          role="status"
+          aria-live="polite"
           className="fixed bottom-6 right-6 z-50 animate-slide-up"
         >
           <div className="bg-green-600 text-white px-6 py-4 rounded-xl shadow-lg flex items-center gap-3 max-w-md">

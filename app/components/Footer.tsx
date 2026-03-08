@@ -34,7 +34,9 @@ export default function Footer() {
             <div className="flex gap-4">
               {/* Social Icons */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/figo-care-ltd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
@@ -43,7 +45,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/figocareltd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
@@ -52,7 +56,9 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://x.com/figocareltd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >

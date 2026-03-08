@@ -62,6 +62,7 @@ export default function ContactSection({ variant = "white" }: ContactSectionProp
               <input type="hidden" name="_subject" value="New Enquiry from FIGO CARE Website" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
               
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

@@ -2,20 +2,37 @@
 
 import { useState, FormEvent } from "react";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
+import { useToast } from "./Toast";
 
 export default function Contact() {
+  const { showToast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Form submission logic would go here
-    alert("Thank you for your enquiry! We will be in touch shortly.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      await fetch("https://formsubmit.co/ajax/info@figocare.co.uk", {
+        method: "POST",
+        body: data,
+      });
+      showToast("Thank you for your enquiry! We will be in touch shortly.");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch {
+      showToast("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -180,12 +197,17 @@ export default function Contact() {
                 />
               </div>
 
+              <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+              <input type="hidden" name="_subject" value="New Enquiry from FIGO CARE Website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <button
                 type="submit"
-                className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg inline-flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg inline-flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 <Send className="w-5 h-5" />
-                Send Enquiry
+                {isSubmitting ? "Sending..." : "Send Enquiry"}
               </button>
 
               <p className="mt-4 text-sm text-gray-500">
