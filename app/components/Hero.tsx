@@ -110,7 +110,7 @@ export default function Hero() {
                 <div className="relative bg-white border border-gray-100 rounded-3xl p-3 shadow-2xl">
                   <div className="relative h-96 rounded-2xl overflow-hidden">
                     <Image
-                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop"
+                      src="/images/hero-nurse.jpg"
                       alt="UK registered nurse providing healthcare services - FIGO CARE LTD healthcare staffing"
                       fill
                       className="object-cover"

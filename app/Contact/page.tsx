@@ -13,7 +13,7 @@ export default function ContactPage() {
         <PageHero 
           title="Contact Us"
           subtitle="We Are Here to Support Your Healthcare Staffing Needs"
-          image="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=2070&auto=format&fit=crop"
+          image="/images/contact-hero.jpg"
         />
         <ContactSection variant="white" />
       </main>

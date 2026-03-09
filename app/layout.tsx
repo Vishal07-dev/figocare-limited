@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       "Specialist UK healthcare recruitment agency placing qualified nurses and carers into hospitals and care homes nationwide.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop",
+        url: "/images/hero-nurse.jpg",
         width: 1200,
         height: 630,
         alt: "FIGO CARE LTD - UK Healthcare Staffing Agency",
@@ -67,11 +67,19 @@ export const metadata: Metadata = {
     description:
       "Specialist UK healthcare recruitment agency. Nurses, carers & allied health professionals for NHS trusts and private providers.",
     images: [
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop",
+      "/images/hero-nurse.jpg",
     ],
   },
   alternates: {
     canonical: "https://www.figocare.co.uk",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
   },
 };
 

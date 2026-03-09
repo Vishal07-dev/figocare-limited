@@ -28,6 +28,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               FIGO CARE LTD<br />
               128 City Road, London, United Kingdom, EC1V 2NX<br />
+              Company Number: 17029041<br />
               Email: info@figocare.co.uk<br />
               Phone: 02081294836
             </p>

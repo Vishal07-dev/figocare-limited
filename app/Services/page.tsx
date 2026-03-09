@@ -13,7 +13,7 @@ export default function ServicesPage() {
         <PageHero 
           title="Our Services"
           subtitle="Tailored Workforce Solutions for Every Healthcare Setting"
-          image="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2070&auto=format&fit=crop"
+          image="/images/services-hero.jpg"
         />
         <WhereWeWork variant="primary" />
       </main>

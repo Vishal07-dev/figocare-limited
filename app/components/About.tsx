@@ -17,7 +17,7 @@ export default function About() {
           <div className="relative">
             <div className="relative h-125 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?q=80&w=2070&auto=format&fit=crop"
+                src="/images/about-healthcare.jpg"
                 alt="Healthcare professionals discussing patient care at UK hospital - FIGO CARE recruitment"
                 fill
                 className="object-cover"

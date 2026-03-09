@@ -13,7 +13,7 @@ export default function AboutPage() {
         <PageHero 
           title="About Figo Care"
           subtitle="Delivering Trusted Healthcare Professionals Across the UK"
-          image="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2070&auto=format&fit=crop"
+          image="/images/about-hero.jpg"
         />
         <WhoWeAre variant="white" />
         <WhyTrustUs variant="primary" />

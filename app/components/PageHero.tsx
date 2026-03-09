@@ -12,7 +12,7 @@ interface PageHeroProps {
 export default function PageHero({ 
   title = "FIGO CARE",
   subtitle = "Delivering Trusted Healthcare Professionals Across the UK",
-  image = "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
+  image = "/images/about-hero.jpg"
 }: PageHeroProps) {
   const [isVisible, setIsVisible] = useState(false);
 

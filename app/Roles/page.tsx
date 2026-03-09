@@ -13,7 +13,7 @@ export default function RolesPage() {
         <PageHero 
           title="Healthcare Careers"
           subtitle="Your Next Healthcare Career Starts Here"
-          image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
+          image="/images/careers-hero.jpg"
         />
         <WhoWeProvide variant="white" />
         <JoinUs variant="primary" />

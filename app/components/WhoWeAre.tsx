@@ -72,7 +72,7 @@ export default function WhoWeAre({ variant = "white" }: WhoWeAreProps) {
           {/* Image */}
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2070&auto=format&fit=crop"
+              src="/images/who-we-are.jpg"
               alt="Healthcare professionals collaborating - FIGO CARE team"
               fill
               className="object-cover"
