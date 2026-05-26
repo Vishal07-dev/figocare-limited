@@ -30,7 +30,7 @@ export default function Footer() {
               128 City Road, London, United Kingdom, EC1V 2NX<br />
               Company Number: 17029041<br />
               Email: jainam@figocare.co.uk<br />
-              Phone: 02081294836
+              Phone: 02081294661
             </p>
             <div className="flex gap-4">
               {/* Social Icons */}
