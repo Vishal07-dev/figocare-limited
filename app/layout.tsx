@@ -110,7 +110,7 @@ export default function RootLayout({
                 addressCountry: "GB",
               },
               telephone: "+442081294836",
-              email: "info@figocare.co.uk",
+              email: "jainam@figocare.co.uk",
               sameAs: [],
               contactPoint: {
                 "@type": "ContactPoint",

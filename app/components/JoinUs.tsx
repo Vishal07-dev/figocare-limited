@@ -83,7 +83,7 @@ export default function JoinUs({ variant = "white" }: JoinUsProps) {
               ))}
             </div>
             <a
-              href="mailto:info@figocare.co.uk"
+              href="mailto:jainam@figocare.co.uk"
               className={`inline-flex items-center gap-2 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:shadow-lg mt-8 ${isPrimary ? "bg-white hover:bg-gray-100 text-primary" : "bg-primary hover:bg-primary-dark text-white"}`}
             >
               Apply Now – Submit Your CV
@@ -112,10 +112,10 @@ export default function JoinUs({ variant = "white" }: JoinUsProps) {
             <div className="mt-8 p-4 bg-primary/10 rounded-xl">
               <p className="text-gray-700 font-medium">Send Your Application:</p>
               <a
-                href="mailto:info@figocare.co.uk"
+                href="mailto:jainam@figocare.co.uk"
                 className="text-primary hover:text-primary-dark font-semibold transition-colors"
               >
-                info@figocare.co.uk
+                jainam@figocare.co.uk
               </a>
             </div>
           </div>

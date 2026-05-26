@@ -29,7 +29,7 @@ export default function Footer() {
               FIGO CARE LTD<br />
               128 City Road, London, United Kingdom, EC1V 2NX<br />
               Company Number: 17029041<br />
-              Email: info@figocare.co.uk<br />
+              Email: jainam@figocare.co.uk<br />
               Phone: 02081294836
             </p>
             <div className="flex gap-4">
@@ -116,11 +116,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="tel:+442081294836" className="text-gray-400 hover:text-primary transition-colors">020 8129 4836</a>
+                <a href="tel:+442081294836" className="text-gray-400 hover:text-primary transition-colors">02081294661</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@figocare.co.uk" className="text-gray-400 hover:text-primary transition-colors">info@figocare.co.uk</a>
+                <a href="mailto:jainam@figocare.co.uk" className="text-gray-400 hover:text-primary transition-colors">jainam@figocare.co.uk</a>
               </li>
             </ul>
           </div>
