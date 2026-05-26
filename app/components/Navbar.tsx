@@ -112,7 +112,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 text-gray-600 py-3 px-4"
               >
                 <Phone className="w-4 h-4" />
-                <span>020 8129 4836</span>
+                <span>02081294661</span>
               </a>
               <Link
                 href="/Contact"

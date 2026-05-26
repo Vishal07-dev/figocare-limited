@@ -22,7 +22,7 @@ export default function Contact() {
     const data = new FormData(form);
 
     try {
-      await fetch("https://formsubmit.co/ajax/info@figocare.co.uk", {
+      await fetch("https://formsubmit.co/ajax/jainam@figocare.co.uk", {
         method: "POST",
         body: data,
       });
@@ -82,9 +82,9 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Telephone</h3>
                   <p className="text-gray-600">
-                    Main: 020 8129 4836
+                    Main: 02081294661
                     <br />
-                    24/7 Line: 020 8129 4836
+                    24/7 Line: 02081294661
                   </p>
                 </div>
               </div>
@@ -98,9 +98,9 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600">
-                    info@figocare.co.uk
+                    jainam@figocare.co.uk
                     <br />
-                    info@figocare.co.uk
+                    jainam@figocare.co.uk
                   </p>
                 </div>
               </div>

@@ -21,7 +21,7 @@ export default function ContactSection({ variant = "white" }: ContactSectionProp
     const formData = new FormData(form);
     
     try {
-      await fetch("https://formsubmit.co/ajax/info@figocare.co.uk", {
+      await fetch("https://formsubmit.co/ajax/jainam@figocare.co.uk", {
         method: "POST",
         body: formData,
       });
@@ -155,7 +155,7 @@ export default function ContactSection({ variant = "white" }: ContactSectionProp
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                  <a href="tel:+442081294836" className="text-gray-600 hover:text-primary transition-colors">020 8129 4836</a>
+                  <a href="tel:+442081294836" className="text-gray-600 hover:text-primary transition-colors">02081294661</a>
                 </div>
               </div>
             </div>
@@ -167,8 +167,8 @@ export default function ContactSection({ variant = "white" }: ContactSectionProp
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email Enquiries</h4>
-                  <a href="mailto:info@figocare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
-                    info@figocare.co.uk
+                  <a href="mailto:jainam@figocare.co.uk" className="text-primary hover:text-primary-dark transition-colors">
+                    jainam@figocare.co.uk
                   </a>
                 </div>
               </div>
